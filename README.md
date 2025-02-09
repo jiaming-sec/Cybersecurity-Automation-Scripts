@@ -11,6 +11,10 @@ Automate log analysis, threat intelligence lookups, and forensic investigations.
 - Extract malicious indicators from logs (IP, hashes, domains).  
 - Automate threat detection using **Sigma rules & YARA**.
 
-- ✅ **Threat Intelligence Automation**  
+✅ **Threat Intelligence Automation**  
 - Integrate with **VirusTotal, Shodan, and AbuseIPDB**.  
-- Lookup IOCs from SIEM alerts automatically. 
+- Lookup IOCs from SIEM alerts automatically.
+
+✅ **SIEM & Firewall Automation**  
+- Query **Splunk logs** with API calls.  
+- Automate **Palo Alto firewall rule verification**. 
