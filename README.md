@@ -1,4 +1,3 @@
-# Cybersecurity-Automation-Scripts
 
 # 🛠 Cybersecurity Automation Scripts  
 
