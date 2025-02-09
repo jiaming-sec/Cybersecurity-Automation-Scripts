@@ -17,4 +17,12 @@ Automate log analysis, threat intelligence lookups, and forensic investigations.
 
 ✅ **SIEM & Firewall Automation**  
 - Query **Splunk logs** with API calls.  
-- Automate **Palo Alto firewall rule verification**. 
+- Automate **Palo Alto firewall rule verification**.
+  
+---
+
+## 🛠 Technologies Used:
+- **Languages:** Python, PowerShell, Bash  
+- **SIEM:** Splunk, ElasticSearch, Graylog  
+- **Threat Intel APIs:** VirusTotal, Shodan, AbuseIPDB  
+- **EDR/XDR:** CrowdStrike, Carbon Black  
