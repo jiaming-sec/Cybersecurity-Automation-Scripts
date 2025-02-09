@@ -9,4 +9,8 @@ Automate log analysis, threat intelligence lookups, and forensic investigations.
 ## 🔍 Featured Scripts:
 ✅ **Log Parsing & IOC Extraction**  
 - Extract malicious indicators from logs (IP, hashes, domains).  
-- Automate threat detection using **Sigma rules & YARA**. 
+- Automate threat detection using **Sigma rules & YARA**.
+
+- ✅ **Threat Intelligence Automation**  
+- Integrate with **VirusTotal, Shodan, and AbuseIPDB**.  
+- Lookup IOCs from SIEM alerts automatically. 
