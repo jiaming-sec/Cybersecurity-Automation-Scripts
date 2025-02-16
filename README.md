@@ -31,30 +31,31 @@ Cybersecurity-Automation-Scripts/
 │── requirements.txt         # Python dependencies
 │── README.md                # Documentation
 ```
-# 🛠 Cybersecurity Automation Scripts  
+---
 
-🚀 **A collection of Python & PowerShell scripts for security operations.**  
-Automate log analysis, threat intelligence lookups, and forensic investigations.  
+## ⚙️ Installation
+### Prerequisites
+- Python 3.8+
+- Required dependencies (install via `pip`):
+  ```sh
+  pip install -r requirements.txt
+  ```
 
 ---
 
-## 🔍 Featured Scripts:
-✅ **Log Parsing & IOC Extraction**  
-- Extract malicious indicators from logs (IP, hashes, domains).  
-- Automate threat detection using **Sigma rules & YARA**.
+## 📖 Usage
+Each script is standalone and can be executed individually. Below are some examples:
 
-✅ **Threat Intelligence Automation**  
-- Integrate with **VirusTotal, Shodan, and AbuseIPDB**.  
-- Lookup IOCs from SIEM alerts automatically.
+### 🔍 Log Monitoring
+```sh
+python threat_detection/log_monitor.py --logfile /var/log/syslog
+```
 
-✅ **SIEM & Firewall Automation**  
-- Query **Splunk logs** with API calls.  
-- Automate **Palo Alto firewall rule verification**.
-  
----
+### 🛡️ Malware Analysis (Using VirusTotal API)
+```sh
+python incident_response/malware_analysis.py --file sample.exe --api-key YOUR_VIRUSTOTAL_API_KEY
+```
 
-## 🛠 Technologies Used:
-- **Languages:** Python, PowerShell, Bash  
-- **SIEM:** Splunk, ElasticSearch, Graylog  
-- **Threat Intel APIs:** VirusTotal, Shodan, AbuseIPDB  
-- **EDR/XDR:** CrowdStrike, Carbon Black  
+### 📜 Windows Event Log Analysis
+```sh
+python log_analysis/parse_windows_logs.py --event-id 4625
