@@ -1,5 +1,10 @@
 # Cybersecurity Automation Scripts
 
+![GitHub stars](https://img.shields.io/github/stars/jiaming-sec/Cybersecurity-Automation-Scripts?style=social)
+![GitHub forks](https://img.shields.io/github/forks/jiaming-sec/Cybersecurity-Automation-Scripts?style=social)
+![GitHub issues](https://img.shields.io/github/issues/jiaming-sec/Cybersecurity-Automation-Scripts)
+![GitHub license](https://img.shields.io/github/license/jiaming-sec/Cybersecurity-Automation-Scripts)
+
 ## 📌 Overview
 This repository contains **Python automation scripts** designed to assist cybersecurity professionals in **threat detection, incident response, log analysis, and compliance monitoring**. These scripts help security teams automate repetitive tasks and enhance operational efficiency.
 
