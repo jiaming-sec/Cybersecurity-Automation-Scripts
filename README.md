@@ -69,3 +69,16 @@ We welcome contributions! If you’d like to enhance existing scripts or add new
 3. Commit your changes (`git commit -m "Added new automation script"`)
 4. Push to your branch (`git push origin feature-new-script`)
 5. Open a Pull Request
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📝 TODOs
+- [ ] Implement Splunk API log ingestion
+- [ ] Develop an automated security baseline scanner for cloud environments
+- [ ] Add more unit tests for critical scripts
+
