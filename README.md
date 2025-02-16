@@ -64,6 +64,7 @@ python incident_response/malware_analysis.py --file sample.exe --api-key YOUR_VI
 ### 📜 Windows Event Log Analysis
 ```sh
 python log_analysis/parse_windows_logs.py --event-id 4625
+```
 
 ---
 
@@ -87,3 +88,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - [ ] Develop an automated security baseline scanner for cloud environments
 - [ ] Add more unit tests for critical scripts
 
+---
+
+## 🤝 Connect
+👩‍💻 **Jiaming Qu**  
+🔗 [GitHub](https://github.com/jiaming-sec) | [LinkedIn](https://www.linkedin.com/in/jiaming-qu/)
