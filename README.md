@@ -59,3 +59,13 @@ python incident_response/malware_analysis.py --file sample.exe --api-key YOUR_VI
 ### 📜 Windows Event Log Analysis
 ```sh
 python log_analysis/parse_windows_logs.py --event-id 4625
+
+---
+
+## 🛠 Contributing
+We welcome contributions! If you’d like to enhance existing scripts or add new cybersecurity automation tools:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-new-script`)
+3. Commit your changes (`git commit -m "Added new automation script"`)
+4. Push to your branch (`git push origin feature-new-script`)
+5. Open a Pull Request
