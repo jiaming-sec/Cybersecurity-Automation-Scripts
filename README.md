@@ -36,6 +36,7 @@ Cybersecurity-Automation-Scripts/
 │── requirements.txt         # Python dependencies
 │── README.md                # Documentation
 ```
+
 ---
 
 ## ⚙️ Installation
