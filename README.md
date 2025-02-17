@@ -91,6 +91,16 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
+## 📊 Roadmap
+- 🔄 **Automate Threat Intelligence Feeds** - Integrate external threat feeds for real-time monitoring.
+- 🔐 **Zero Trust Implementation** - Scripts for continuous authentication monitoring.
+- 🌍 **Cloud Security Enhancements** - Automate cloud compliance checks for AWS, Azure, and GCP.
+- 🧠 **Machine Learning for Anomaly Detection** - Leverage ML models for predictive threat hunting.
+- 🚀 **Automated Phishing Detection** - Develop scripts for analyzing email headers and detecting phishing attempts.
+- 📦 **Container Security Audits** - Implement Docker and Kubernetes security monitoring.
+
+---
+
 ## 🤝 Connect
 👩‍💻 **Jiaming Qu**  
 🔗 [GitHub](https://github.com/jiaming-sec) | [LinkedIn](https://www.linkedin.com/in/jiaming-qu/)
