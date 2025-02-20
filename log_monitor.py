@@ -17,3 +17,7 @@ logging.basicConfig(
 # Define log file paths
 LOG_FILE_PATH = "logs/system.log"
 ALERT_LOG_PATH = "logs/alert_logs.log"
+
+# Define regex patterns for suspicious events
+FAILED_LOGIN_PATTERN = re.compile(r"Failed password for (?:invalid user )?(\w+) from (\d+\.\d+\.\d+\.\d+)")
+SUDO_COMMAND_PATTERN = re.compile(r"sudo: (.*?) : command not allowed")
