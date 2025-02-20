@@ -32,3 +32,10 @@ This repository contains a collection of Python scripts designed to automate var
 git clone https://github.com/jiaming-sec/Cybersecurity-Automation-Scripts.git
 cd Cybersecurity-Automation-Scripts
 ```
+### Configure and Run Scripts
+- Each script may have configurable parameters (e.g., log file paths, email settings, webhook URLs).
+- Open the script in a text editor to review and modify configurations as needed.
+- Run the script:
+  ```bash
+  python script_name.py
+  ```
