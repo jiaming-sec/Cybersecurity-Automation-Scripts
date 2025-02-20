@@ -99,3 +99,6 @@ def monitor_logs():
         observer.stop()
     observer.join()
     logging.info("Log monitoring stopped.")
+    
+if __name__ == "__main__":
+    monitor_logs()
