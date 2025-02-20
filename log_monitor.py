@@ -45,3 +45,9 @@ def send_alert_email(subject, message):
         logging.info("Alert email sent successfully.")
     except Exception as e:
         logging.error(f"Error sending email: {e}")
+
+class LogFileHandler(FileSystemEventHandler):
+    """Watch for changes in the log file and analyze new entries."""
+    def on_modified(self, event):
+        if event.src_path == LOG_FILE_PATH:
+            analyze_logs()
