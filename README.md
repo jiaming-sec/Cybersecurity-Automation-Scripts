@@ -10,3 +10,10 @@ This repository contains a collection of Python scripts designed to automate var
 - **Windows Event Log Parsing:** Scripts to parse and analyze Windows Event Logs for security events.
 - **Email and Slack Notifications:** Alerts security personnel via email or Slack when threats are detected.
 
+## Scripts
+
+1. **`log_monitor.py`** - Monitors specified log files in real-time and alerts on detecting predefined suspicious patterns.
+2. **`log_parser.py`** - Parses generic log files to extract and report security-relevant information.
+3. **`malware_analysis.py`** - Automates the analysis of files to identify potential malware characteristics.
+4. **`parse_windows_logs.py`** - Parses Windows Event Logs to extract and analyze security events.
+5. **`security_log_automation.py`** - Automates security log analysis, detects failed login attempts, unauthorized sudo commands, and integrates real-time monitoring.
