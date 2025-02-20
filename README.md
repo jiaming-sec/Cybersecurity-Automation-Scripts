@@ -56,3 +56,7 @@ To run the scripts automatically at regular intervals:
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your enhancements.
+
+## License
+
+This project is licensed under the MIT License.
