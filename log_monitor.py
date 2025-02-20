@@ -30,3 +30,18 @@ SMTP_PORT = 587
 SMTP_USERNAME = "your_email@example.com"
 SMTP_PASSWORD = "your_email_password"
 
+def send_alert_email(subject, message):
+    """Send an email alert for suspicious log activity."""
+    try:
+        msg = MIMEText(message)
+        msg['Subject'] = subject
+        msg['From'] = EMAIL_SENDER
+        msg['To'] = EMAIL_RECEIVER
+        
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.starttls()
+            server.login(SMTP_USERNAME, SMTP_PASSWORD)
+            server.sendmail(EMAIL_SENDER, EMAIL_RECEIVER, msg.as_string())
+        logging.info("Alert email sent successfully.")
+    except Exception as e:
+        logging.error(f"Error sending email: {e}")
