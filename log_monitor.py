@@ -51,3 +51,36 @@ class LogFileHandler(FileSystemEventHandler):
     def on_modified(self, event):
         if event.src_path == LOG_FILE_PATH:
             analyze_logs()
+def analyze_logs():
+    """Analyze logs for suspicious activity."""
+    if not os.path.exists(LOG_FILE_PATH):
+        logging.warning("Log file not found!")
+        return
+
+    with open(LOG_FILE_PATH, 'r') as log_file:
+        logs = log_file.readlines()
+
+    alerts = []
+
+    for line in logs[-10:]:  # Process only the last 10 lines to reduce redundant processing
+        failed_login_match = FAILED_LOGIN_PATTERN.search(line)
+        sudo_command_match = SUDO_COMMAND_PATTERN.search(line)
+
+        if failed_login_match:
+            user, ip = failed_login_match.groups()
+            alert_msg = f"Suspicious failed login attempt by {user} from {ip}"
+            alerts.append(alert_msg)
+
+        if sudo_command_match:
+            cmd = sudo_command_match.group(1)
+            alert_msg = f"Unauthorized sudo command detected: {cmd}"
+            alerts.append(alert_msg)
+
+    if alerts:
+        with open(ALERT_LOG_PATH, 'a') as alert_log:
+            for alert in alerts:
+                alert_log.write(alert + "\n")
+        logging.info("Security events detected and logged.")
+        send_alert_email("Security Alert - Suspicious Activity Detected", "\n".join(alerts))
+    else:
+        logging.info("No suspicious activity detected.")
