@@ -52,3 +52,7 @@ To run the scripts automatically at regular intervals:
   ```
 - **Windows Task Scheduler:**
   - Create a new task and specify `python security_log_automation.py` as the command to execute at scheduled intervals.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your enhancements.
