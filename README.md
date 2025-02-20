@@ -39,3 +39,16 @@ cd Cybersecurity-Automation-Scripts
   ```bash
   python script_name.py
   ```
+
+### Automating Execution
+To run the scripts automatically at regular intervals:
+- **Linux Cron Job:**
+  ```bash
+  crontab -e
+  ```
+  Add the following line to **run every 5 minutes**:
+  ```bash
+  */5 * * * * /usr/bin/python3 /path/to/security_log_automation.py
+  ```
+- **Windows Task Scheduler:**
+  - Create a new task and specify `python security_log_automation.py` as the command to execute at scheduled intervals.
