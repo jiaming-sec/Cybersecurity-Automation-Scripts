@@ -84,3 +84,18 @@ def analyze_logs():
         send_alert_email("Security Alert - Suspicious Activity Detected", "\n".join(alerts))
     else:
         logging.info("No suspicious activity detected.")
+
+def monitor_logs():
+    """Monitor log file for real-time changes."""
+    observer = Observer()
+    event_handler = LogFileHandler()
+    observer.schedule(event_handler, path=os.path.dirname(LOG_FILE_PATH) or '.', recursive=False)
+    observer.start()
+    logging.info("Starting real-time log monitoring...")
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
+    logging.info("Log monitoring stopped.")
