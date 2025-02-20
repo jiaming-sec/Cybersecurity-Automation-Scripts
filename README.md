@@ -17,3 +17,13 @@ This repository contains a collection of Python scripts designed to automate var
 3. **`malware_analysis.py`** - Automates the analysis of files to identify potential malware characteristics.
 4. **`parse_windows_logs.py`** - Parses Windows Event Logs to extract and analyze security events.
 5. **`security_log_automation.py`** - Automates security log analysis, detects failed login attempts, unauthorized sudo commands, and integrates real-time monitoring.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x installed.
+- Required dependencies installed:
+  ```bash
+  pip install -r requirements.txt
+  ```
