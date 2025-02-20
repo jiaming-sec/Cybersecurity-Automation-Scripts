@@ -27,3 +27,8 @@ This repository contains a collection of Python scripts designed to automate var
   ```bash
   pip install -r requirements.txt
   ```
+### Clone the Repository
+```bash
+git clone https://github.com/jiaming-sec/Cybersecurity-Automation-Scripts.git
+cd Cybersecurity-Automation-Scripts
+```
