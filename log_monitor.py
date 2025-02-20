@@ -13,3 +13,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
+
+# Define log file paths
+LOG_FILE_PATH = "logs/system.log"
+ALERT_LOG_PATH = "logs/alert_logs.log"
