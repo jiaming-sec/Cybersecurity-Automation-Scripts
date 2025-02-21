@@ -35,3 +35,14 @@ parsed_entries = []
         general_match = GENERAL_LOG_PATTERN.search(line)
         failed_login_match = FAILED_LOGIN_PATTERN.search(line)
         error_match = ERROR_PATTERN.search(line)
+
+        log_entry = {}
+        
+        if general_match:
+            timestamp, source, message = general_match.groups()
+            log_entry = {
+                "timestamp": timestamp,
+                "source": source,
+                "message": message,
+                "category": "General"
+            }
