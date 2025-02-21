@@ -46,3 +46,24 @@ parsed_entries = []
                 "message": message,
                 "category": "General"
             }
+
+        if failed_login_match:
+            user, ip = failed_login_match.groups()
+            log_entry["category"] = "Failed Login"
+            log_entry["username"] = user
+            log_entry["ip_address"] = ip
+        
+        if error_match:
+            log_entry["category"] = "Error"
+        
+        if log_entry:
+            parsed_entries.append(log_entry)
+    
+    with open(PARSED_LOG_PATH, 'w') as json_file:
+        json.dump(parsed_entries, json_file, indent=4)
+    
+    logging.info(f"Parsed {len(parsed_entries)} log entries successfully.")
+    print(f"Parsed logs saved to {PARSED_LOG_PATH}")
+
+if __name__ == "__main__":
+    parse_logs()
