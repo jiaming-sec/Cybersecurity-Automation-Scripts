@@ -4,10 +4,13 @@ import json
 import logging
 from datetime import datetime
 
-def extract_ips(log_file):
-    with open(log_file, 'r') as file:
-        logs = file.read()
-    return re.findall(r'\b(?:\d{1,3}\.){3}\d{1,3}\b', logs)
+# Configure logging
+logging.basicConfig(
+    filename="log_parser.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 log_file = "server.log"
 ip_addresses = extract_ips(log_file)
