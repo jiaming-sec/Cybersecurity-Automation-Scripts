@@ -19,3 +19,9 @@ PARSED_LOG_PATH = "logs/parsed_logs.json"
 GENERAL_LOG_PATTERN = re.compile(r"(\w+ \d+ \d+:\d+:\d+) (\w+) (.*)")
 FAILED_LOGIN_PATTERN = re.compile(r"Failed password for (?:invalid user )?(\w+) from (\d+\.\d+\.\d+\.\d+)")
 ERROR_PATTERN = re.compile(r"error|failure|denied", re.IGNORECASE)
+
+def parse_logs():
+    """Parses logs and extracts key security events."""
+    if not os.path.exists(LOG_FILE_PATH):
+        logging.warning("Log file not found!")
+        return
