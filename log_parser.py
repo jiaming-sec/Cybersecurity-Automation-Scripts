@@ -11,8 +11,8 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+# Define log file path
+LOG_FILE_PATH = "logs/system.log"
+PARSED_LOG_PATH = "logs/parsed_logs.json"
 
-log_file = "server.log"
-ip_addresses = extract_ips(log_file)
-print("Extracted IPs:", ip_addresses)
 
