@@ -25,3 +25,13 @@ def parse_logs():
     if not os.path.exists(LOG_FILE_PATH):
         logging.warning("Log file not found!")
         return
+        
+parsed_entries = []
+    
+    with open(LOG_FILE_PATH, 'r') as log_file:
+        logs = log_file.readlines()
+    
+    for line in logs:
+        general_match = GENERAL_LOG_PATTERN.search(line)
+        failed_login_match = FAILED_LOGIN_PATTERN.search(line)
+        error_match = ERROR_PATTERN.search(line)
